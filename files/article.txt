@@ -1,0 +1,61 @@
+The UK autumn budget turned out to be more crypto-friendly than many expected. While taxes are rising in some areas, the major fears for digital assets didn’t materialise. For crypto investors, any impact is indirect, coming over time through broader changes to income tax and capital gains rules.
+
+Rachel Lin, CEO and co-founder of Synfutures, told Yahoo Finance UK that the budget won’t directly change how crypto gains are taxed.
+“There are no headline changes that rewrite how HMRC treats crypto gains. Capital gains tax (CGT) treatment remains governed by existing guidance,” she said. Lin added that the government is still pushing for more disclosure and enforcement in the crypto sector, which could affect reporting obligations and taxpayer risk over time.
+
+No immediate changes to crypto taxation
+One of the most significant measures in the budget is the freeze on income tax thresholds until 2030/31. While not aimed at crypto, this affects investors because wages tend to rise with inflation.
+
+As more people move into higher tax brackets, staking rewards, mining income, and some airdrops, taxed as regular income, could face higher rates over time, though the budget does not explicitly mention crypto or these types of income.Capital gains on crypto sales are also affected: more gains could be taxed at the higher 24% rate instead of 18%. Over time, this “fiscal drag” means higher tax bills even if crypto holdings and gains remain the same.
+The budget also introduced ISA reforms starting in April 2027. The overall annual allowance of £20,000 remains, with £8,000 earmarked for investments.
+
+Crypto investors using exchange-traded notes (ETNs) can still invest their full £20,000 allowance in 2025/26. From 2026/27, crypto ETNs will only be eligible for innovative finance ISAs, but the overall contribution limit remains, meaning investors can continue using tax-efficient wrappers for crypto exposure. However, the budget itself did not specifically mention crypto ETNs.
+Other tax changes, like a 2% rise in property, savings, and dividend rates from 2026, do not explicitly impact crypto, but this assumes HMRC continues to treat crypto income as miscellaneous income or trading income.
+
+Rumours that didn’t materialise
+Importantly, several rumoured measures did not appear in the budget. There was no “exit tax” on unrealised gains for people moving abroad, no reduction in the CGT annual exemption, and no increase in CGT rates for crypto. This signals that HMRC’s treatment of digital assets remains largely unchanged for now.
+
+For UK crypto holders, the fundamentals of crypto taxation haven’t changed. Gains on bitcoin (BTC-USD) or other digital assets remain subject to CGT, and staking or mining income is taxed as regular income.
+
+The long-term effect of frozen thresholds is predictable: more income and gains will gradually move into higher tax brackets. ISAs remain a viable route for tax-efficient investing, and crypto has not been singled out for additional scrutiny.
+No New “Crypto Tax,” But Pressure Still Rises
+Chancellor Rachel Reeves did not introduce any crypto-specific tax in the 2025 Budget. There is no new levy on trading, holding, or spending digital assets.
+
+However, the Budget extends income-tax threshold freezes for three more years. As wages rise, more taxpayers drift into higher bands, including active crypto traders.
+
+The capital gains tax (CGT) allowance remains very low compared to historic levels. That means more crypto disposals trigger reportable gains, even for modest retail portfolios.
+
+At the same time, the UK is pushing ahead with global data-sharing under new reporting standards.
+
+Exchanges and platforms will supply more detailed customer information to HMRC from 2026.
+
+HMRC Backs Away From Its Hard Line on DeFi
+Alongside the Budget, HMRC published a consultation outcome on DeFi lending and staking. It responds to strong criticism of its 2022 guidance on loans and liquidity pools.
+
+Stakeholders told HMRC that current rules create disproportionate administrative burdens. They warned that treating every DeFi move as a disposal bears little relation to economic reality.
+
+In response, HMRC has dropped its earlier idea of copying repo and stock lending rules. It now prefers a framework based on “no gain, no loss” (NGNL) for many DeFi flows.
+
+Crucially, the department accepts that automated market makers represent a major share of activity. It signals that any new rules should explicitly cover Uniswap-style multi-token liquidity pools.
+
+Proposed NGNL Rules for DeFi Loans and Liquidity Pools
+HMRC now outlines a potential NGNL approach for three areas. These are single-token arrangements, crypto borrowing, and automated market makers.
+
+For single-token lending, entering and exiting a platform could be NGNL for CGT. The real gain or loss would arise only when the user finally sells the token.
+For borrowing, posting collateral and taking out tokens would be ignored for CGT. Selling borrowed tokens and later buying them back to repay would crystallise the gain or loss.
+
+For AMMs, HMRC proposes NGNL treatment when users deposit tokens for LP positions. Tax would then focus on differences in the number of tokens received when they exit.
+
+If users receive more of a token than they originally deposited, the extra counts as a gain. But if they receive fewer, the shortfall is treated as a loss against their tax base.
+
+HMRC stresses that this is still a “potential approach,” not enacted law. It will continue consultations before deciding whether to legislate.
+
+DeFi Rewards: No New “All Income” Rule – For Now
+One of the most controversial ideas was to treat all DeFi rewards as income. Respondents warned that this would ignore capital versus revenue distinctions and create dry tax charges.
+
+HMRC now says it is not actively pursuing an “all revenue” deeming rule. Rewards will continue to follow existing principles for now.
+For spot traders on centralised exchanges, the Budget brings no direct structural change. CGT still applies on each disposal, and income tax applies where trading amounts to a trade.
+
+However, the combination of frozen thresholds and low CGT allowances increases effective tax pressure.
+
+More active traders will breach reporting thresholds and face higher marginal rates on gains. HMRC expects more users to use portfolio tracking software to support their filings.
