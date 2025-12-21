@@ -110,53 +110,50 @@ def cleanseWordList(posTaggedWordTuples):
             cleanseWords.append(wordLemmatizer.lemmatize(cleansedWord,treebankPosToWordnet(pos)))
     return cleanseWords
 
-# Get User Details
-welcomeUser() 
-username = getUsername()
-greetUser(username)
+def analyzeText(textToAnalyze):
+    articleSentences = tokenizeSentences(textToAnalyze)
+    articleWords = tokenizeWords(articleSentences)
 
-# Extract and Tokenize Text
-articleTextRaw = getArticleText()
-articleSentences = tokenizeSentences(articleTextRaw)
-articleWords = tokenizeWords(articleSentences)
+    # Get Sentence Analytics 
+    stockSearchPattern = "[0-9]|[%$€£]|thousand|million|billion|trillion|profit|loss"
+    keySentences = extractKeySentences(articleSentences,stockSearchPattern)
+    wordsPerSentence = getWordsPerSentence(articleSentences)
 
-# Get Sentence Analytics 
-stockSearchPattern = "[0-9]|[%$€£]|thousand|million|billion|trillion|profit|loss"
-keySentences = extractKeySentences(articleSentences,stockSearchPattern)
-wordsPerSentence = getWordsPerSentence(articleSentences)
+    # Get word Analytics
+    wordsPosTagged = nltk.pos_tag(articleWords)
+    articleWordsCleansed = cleanseWordList(wordsPosTagged)
 
-# Get word Analytics
-wordsPosTagged = nltk.pos_tag(articleWords)
-articleWordsCleansed = cleanseWordList(wordsPosTagged)
+    # Generate word cloud
+    separator = " "
+    wordCloudFilePath = "results/wordcloud.png"
+    wordcloud = WordCloud(width = 1000, height = 700, \
+        background_color="white", colormap="Set3", collocations=False).generate(separator.join(articleWordsCleansed))
+    wordcloud.to_file(wordCloudFilePath)
 
-# Generate word cloud
-separator = " "
-wordCloudFilePath = "results/wordcloud.png"
-wordcloud = WordCloud(width = 1000, height = 700, \
-    background_color="white", colormap="Set3", collocations=False).generate(separator.join(articleWordsCleansed))
-wordcloud.to_file(wordCloudFilePath)
+    #Run Sentiment Analysis
+    sentimentResult = sentimentAnalyzer.polarity_scores(textToAnalyze)
 
-#Run Sentiment Analysis
-sentimentResult = sentimentAnalyzer.polarity_scores(articleTextRaw)
+    # Collate analyses into one dictionary
+    finalResult = {
+        "data": {
+            "keySentences": keySentences,
+            "wordsPerSentence": round(wordsPerSentence, 1),
+            "sentiment": sentimentResult,
+            "wordCloudFilePath": wordCloudFilePath
+        },
+        "metadata":{
+            "sentenceAnalyzed": len(articleSentences),
+            "wordsAnalyzed": len(articleWordsCleansed)
 
-# Collate analyses into one dictionary
-finalResult = {
-    "username": username,
-    "data": {
-        "keySentences": keySentences,
-        "wordsPerSentence": round(wordsPerSentence, 1),
-        "sentiment": sentimentResult,
-        "wordCloudFilePath": wordCloudFilePath
-    },
-    "metadata":{
-        "sentenceAnalyzed": len(articleSentences),
-        "wordsAnalyzed": len(articleWordsCleansed)
-
+        }
     }
-}
+    return finalResult
+def runAsFile():
+    # Get User Details
+    welcomeUser() 
+    username = getUsername()
+    greetUser(username)
 
-finalResultJson = json.dumps(finalResult, indent=4)
-
-# Print for testing
-print(finalResultJson)
-
+    # Extract and Tokenize Text
+    articleTextRaw = getArticleText()
+    analyzeText(articleTextRaw)
