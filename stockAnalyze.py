@@ -45,7 +45,9 @@ def getCompanyNews(company):
 
 def extractNewsArticleTextFromHtml(soup):
     allText = ''
-    result = soup.find_all('div', id='content-page')
+    result = soup.find_all("div", {"id":"content-page"})
+    if not result:
+        result = soup.find_all("div", {"class":"body-wrap yf-tt7to2"})
     for res in result:
         allText += res.text
     return allText 
